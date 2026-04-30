@@ -1,0 +1,181 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(180deg, #08101f, #0b1020);
+  color: white;
+}
+
+/* layout */
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: auto;
+}
+
+/* header */
+.header {
+  position: sticky;
+  top: 0;
+  background: rgba(0,0,0,0.6);
+  backdrop-filter: blur(10px);
+}
+
+.header-inner {
+  display: flex;
+  justify-content: space-between;
+  height: 60px;
+  align-items: center;
+}
+
+.nav a {
+  margin-left: 20px;
+  color: #aaa;
+  text-decoration: none;
+}
+
+.menu-btn {
+  display: none;
+}
+
+/* hero */
+.hero {
+  padding: 100px 0;
+}
+
+.hero-inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: center;
+}
+
+.hero h1 {
+  font-size: 48px;
+}
+
+.hero span {
+  color: #888;
+}
+
+.hero-text {
+  margin-top: 20px;
+  color: #aaa;
+}
+
+.hero-buttons {
+  margin-top: 30px;
+}
+
+.btn {
+  padding: 10px 20px;
+  margin-right: 10px;
+  text-decoration: none;
+}
+
+.primary {
+  background: #6ea8fe;
+  color: black;
+}
+
+.secondary {
+  border: 1px solid #555;
+  color: white;
+}
+
+/* hero card */
+.hero-card {
+  background: rgba(255,255,255,0.05);
+  padding: 30px;
+  border-radius: 12px;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  background: #7ef7b8;
+  border-radius: 50%;
+}
+
+/* section */
+.section {
+  padding: 80px 0;
+}
+
+/* about */
+.about-content p {
+  color: #aaa;
+}
+
+/* projects */
+.project-item {
+  padding: 20px 0;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.project-item h3 {
+  margin: 0;
+}
+
+.project-item p {
+  color: #aaa;
+}
+
+.project-item a {
+  color: white;
+  text-decoration: none;
+}
+
+.tags span {
+  background: #222;
+  padding: 5px 10px;
+  margin-right: 5px;
+  font-size: 12px;
+}
+
+/* contact（乾淨版） */
+.contact-list {
+  margin-top: 40px;
+}
+
+.contact-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+  text-decoration: none;
+  color: white;
+}
+
+.contact-item:hover {
+  opacity: 0.7;
+}
+
+.contact-title {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.contact-sub {
+  font-size: 14px;
+  color: #aaa;
+  margin-top: 5px;
+}
+
+/* mobile */
+@media (max-width: 768px) {
+
+  .hero-inner {
+    grid-template-columns: 1fr;
+  }
+
+  .nav {
+    display: none;
+  }
+
+  .menu-btn {
+    display: block;
+  }
+}
